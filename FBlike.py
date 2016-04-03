@@ -5,7 +5,8 @@ import facebook
 token = "token grabbed from facebook"
 #use the token
 graph=facebook.GraphAPI(token)
-#username get_object
+#any facebook page get_object
+#robertdowneyjr page is taken as example
 profile=graph.get_object("robertdowneyjr")
 posts=graph.get_connections(profile['id'],"posts")
 #for all the posts from the user
